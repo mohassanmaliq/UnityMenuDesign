@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lose : MonoBehaviour
 {
@@ -15,5 +16,6 @@ public class lose : MonoBehaviour
     }
     void OnTriggerEnter(){
         Debug.Log("You Lose");
+        SceneManager.LoadScene("lose");
     }
 }

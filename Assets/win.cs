@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class win : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class win : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(){
+   void OnTriggerEnter(){
         Debug.Log("You Win");
+        SceneManager.LoadScene("win");
     }
 }
 
